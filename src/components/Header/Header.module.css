@@ -1,0 +1,10 @@
+.header {
+    background-image: url(../../assets/head1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    min-height: 120vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}

@@ -1,0 +1,40 @@
+.wrapper {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #180022;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    grid-template-areas:
+      ". search"
+      ". content"
+      ". content"
+  }
+  
+  
+  @media screen and (max-width: 1868px) {
+    .app {
+      grid-template-rows: 0.5fr 2fr 2fr;
+    }
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .app {
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+  
+  @media screen and (max-width: 1470px) {
+    .app {
+      grid-template-columns: 1fr 1.7fr;
+      grid-template-rows: 0.2fr 1fr 2fr;
+    }
+  }
+  
